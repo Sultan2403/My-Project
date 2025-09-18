@@ -13,10 +13,14 @@ button {
 }
 
 header {
-  margin: 2rem;
+  margin: 2.5rem;
   font-weight: 500;
   position: sticky;
   top: 0px;
+  height: 8vh;
+  align-items: center;
+  padding: 12px 0;
+  background-color: rgb(255, 255, 255);
 }
 
 nav,
@@ -24,6 +28,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-self: center;
 }
 
 ul {
@@ -113,8 +118,40 @@ a.nav-item:hover {
 .secondary-button-container {
   background-color: rgb(255, 255, 255);
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.secondary-button-container i {
+  font-size: 42px;
+}
+
+.secondary-button-text-container span {
+  font-size: 14px;
 }
 
 .secondary-button-container a {
   color: #25242b;
+}
+
+.img-container {
+  background-image: linear-gradient(
+    55.15deg,
+    #8ea5fe -7.09%,
+    #beb3fd 51.72%,
+    #90d1ff 101.48%
+  );
+  background-size: 20rem 15rem;
+}
+
+.sec-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sec-1 div h2 {
+  font-size: 2.5rem;
 }
