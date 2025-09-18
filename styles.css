@@ -54,6 +54,7 @@ a.nav-item:hover {
 .hero-section {
   display: flex;
   margin: 10rem 5rem;
+  justify-content: space-between;
 }
 
 .text-container {
@@ -83,4 +84,37 @@ a.nav-item:hover {
     #beb3fd 51.72%,
     #90d1ff 101.48%
   );
+}
+
+.extra-info {
+  font-size: 156x;
+  font-weight: 400;
+  color: #626070;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-section a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.download-button-text-container {
+  padding: 14px 30px;
+  background-color: #25242b;
+  border: none;
+  border-radius: 5px;
+}
+
+.secondary-button-container {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+}
+
+.secondary-button-container a {
+  color: #25242b;
 }
