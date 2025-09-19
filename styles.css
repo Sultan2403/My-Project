@@ -89,14 +89,17 @@ a.nav-item:hover {
   font-weight: 500;
 }
 
+/* -------- Its A Work In Progress -------- */
+
+/* 
 .heading span {
-  text-decoration: linear-gradient(
+  color: linear-gradient(
     55.15deg,
     #8ea5fe -7.09%,
     #beb3fd 51.72%,
     #90d1ff 101.48%
   );
-}
+} */
 
 .extra-info {
   font-size: 156x;
@@ -168,6 +171,7 @@ a.nav-item:hover {
 
 .sec-1 div h2 {
   font-size: 2.5rem;
+  font-weight: 500;
 }
 
 .sec-1 p {
@@ -241,6 +245,10 @@ a.nav-item:hover {
   margin: auto 10rem;
 }
 
+.content-wrapper-text-container div {
+  margin-top: 1.3rem;
+}
+
 .content-wrapper .colored-text {
   color: #293e92;
   font-size: 25px;
@@ -248,8 +256,8 @@ a.nav-item:hover {
 }
 
 .sec-2-heading {
-  font-size: 32px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: 100;
 }
 
 .sec-2-extra-info {
@@ -286,6 +294,29 @@ a.nav-item:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #25242b;
+}
+
+.sec-3 {
+  margin: 5rem auto;
+}
+
+.sec-3 .content-wrapper {
+  flex-direction: row-reverse;
+}
+
+.sec-3 a {
+  text-decoration: none;
+}
+
+.sec-3-button-container {
+  text-align: center;
+  background-color: rgb(112 131 245);
+  color: rgb(255, 255, 255);
+  padding: 12px 24px;
+  width: 7rem;
+  margin: 3rem 0;
+  border-radius: 5px;
 }
 
 /* --------- COMPONENTS ------------ */
