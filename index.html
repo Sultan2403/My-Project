@@ -1,208 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind Template</title>
-    <link rel="stylesheet" href="./styles.css" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Template</title>
+  <link rel="stylesheet" href="./styles.css" />
 
-    <!-- Icons -->
-    <script
-      src="https://kit.fontawesome.com/9628ae57ba.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <span class="flex-container">
-          <a href="index.html"><img src="./Assets/logo.svg" /></a>
-        </span>
-        <span class="flex-container">
-          <ul>
-            <li><a class="nav-item" href="#">Features </a></li>
-            <li><a class="nav-item" href="#">About</a></li>
-            <li><a class="nav-item" href="#">How It Works</a></li>
-            <li><a class="nav-item" href="#">Support</a></li>
-            <li>
-              <a class="nav-item" href="#"
-                >Pages <i class="fa-solid fa-chevron-down"></i
-              ></a>
-            </li>
-          </ul>
-        </span>
-        <span class="flex-container">
-          <ul>
-            <li>
-              <a href="#"><i class="fa-solid fa-sun"></i></a>
-            </li>
-            <li>
-              <a class="nav-item" href="#">Sign In</a>
-            </li>
-            <li><a href="#" class="sign-up">Sign Up</a></li>
-          </ul>
-        </span>
-      </nav>
-    </header>
-    <main>
-      <section class="hero-section">
-        <div class="text-container">
-          <div class="p-container">Ready to Use Tailwind CSS Web Template.</div>
-          <div class="heading">
-            <h3>
-              Tailwind Template for <br /><span> App & Software</span> Site.
-            </h3>
-          </div>
-          <div class="extra-info">
-            All in one Tailwind CSS site template for - App and Software<br />
-            sites Comes with all essential components.
-          </div>
-          <div class="button-container">
-           <a href="#"> <span class="download-button-text-container">
-               Download Now  | <i class="fa-brands fa-apple"></i>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/9628ae57ba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <span class="flex-container">
+        <a href="index.html"><img src="./Assets/logo.svg" /></a>
+      </span>
+      <span class="flex-container">
+        <ul>
+          <li><a class="nav-item" href="#features">Features </a></li>
+          <li><a class="nav-item" href="#about">About</a></li>
+          <li><a class="nav-item" href="#How-It-Works">How It Works</a></li>
+          <li><a class="nav-item" href="#">Support</a></li>
+          <li>
+            <a class="nav-item" href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+          </li>
+        </ul>
+      </span>
+      <span class="flex-container">
+        <ul>
+          <li>
+            <a href="#"><i class="fa-solid fa-sun"></i></a>
+          </li>
+          <li>
+            <a class="nav-item" href="#">Sign In</a>
+          </li>
+          <li><a href="#" class="sign-up">Sign Up</a></li>
+        </ul>
+      </span>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-section">
+      <div class="text-container">
+        <div class="p-container">Ready to Use Tailwind CSS Web Template.</div>
+        <div class="heading">
+          <h3>
+            Tailwind Template for <br /><span> App & Software</span> Site.
+          </h3>
+        </div>
+        <div class="extra-info">
+          All in one Tailwind CSS site template for - App and Software<br />
+          sites Comes with all essential components.
+        </div>
+        <div class="button-container">
+          <a href="#"> <span class="download-button-text-container">
+              Download Now | <i class="fa-brands fa-apple"></i>
             </span></a>
 
-            <span class="secondary-button-container">
-              
-                <a href="#"><div class="secondary-button-icon-container">
-                  
-                  <i class="fa-solid fa-circle-play"></i>
-                </div>
-                <div class="secondary-button-text-container">
-                  <span>Watch Demo</span><br />
-                  See How It Works
-              </a>
-                </div>
-            </span>
-          </div>
-        </div>
+          <span class="secondary-button-container">
 
-        <div class="img-container">
-          <img src="./Assets/hero-light.png" />
-        </div>
-      </section>
-       <div class="sec-1">
-         <div><h2>Amazing features for you to make</h2></div>
-          <div><h2> your work easier</h2></div>
-          <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae</p></div><div><p> tortor lacus. Phasellus aliquam ante in maximus.</p></div>
-        </div>
-         
+            <a href="#">
+              <div class="secondary-button-icon-container">
 
-        <section class="mini-sec">
-         <div class="row-container"> 
-           <div class="row-flex-item">
-             <div class="icon-container"><i class="fa-brands fa-app-store"></i></div>
-             <div class="header-container"><h3>Crafted for App Landing</h3></div>
-             <div class="mini-sec-p-container"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</div>          
-           </div>
-           <div class="row-flex-item">
-             <div class="icon-container"><i class="fa-solid fa-layer-group"></i></div>
-             <div class="header-container"><h3>High Quality Design</h3></div>
-             <div class="mini-sec-p-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</div>          
-           </div>
-           <div class="row-flex-item">
-             <div class="icon-container"><i class="fa-solid fa-chess-board"></i></div>
-             <div class="header-container"><h3>All Essential Sections</h3></div>
-             <div class="mini-sec-p-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</div>          
-           </div>
-         </div>
-         <div class="row-container"> 
-           <div class="row-flex-item">
-             <div class="icon-container"><i class="fa-solid fa-gauge-high"></i></div>
-             <div class="header-container"><h3>Speed Optimized</h3></div>
-             <div class="mini-sec-p-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</div>          
-           </div>
-           <div class="row-flex-item">
-             <div class="icon-container"><i class="fa-solid fa-sliders"></i></div>
-             <div class="header-container"><h3>Fully Customizable</h3></div>
-             <div class="mini-sec-p-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</div>          
-           </div>
-           <div class="row-flex-item">
-             <div class="icon-container"><i class="fa-solid fa-arrows-rotate"></i></div>
-             <div class="header-container"><h3>Regular Updates</h3></div>
-             <div class="mini-sec-p-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</div>          
-           </div>
-         </div>
-        </section>
-      </section>
-    </main>
-    <section class="sec-2">
-      <div class="content-wrapper">
-        <div class="content-wrapper-img-container">
-          <img src="./Assets/about-1-light.png"/>
+                <i class="fa-solid fa-circle-play"></i>
+              </div>
+              <div class="secondary-button-text-container">
+                <span>Watch Demo</span><br />
+                See How It Works
+            </a>
         </div>
-        <div class="content-wrapper-text-container">
-          <div class="colored-text">Track Audience Activities</div>
-          <div class="sec-2-heading"><h3>Track Your Audience<br/> Activities</h3></div>
-          <div class="sec-2-extra-info">Schedule your posts for times when your audience is most active.<br/> Choose from our best-time predictions, or create your own<br/> publishing schedule.</div>
-          <div class="extra-content-wrapper">
-            <div class="num-container"><div>01</div></div>
-             <div class="extra-text-container">
-               <div><h3>Lorem ipsum dolor.</h3></div>
-               <div><p>Ut ultricies lacus non fermentum ultrices.</p></div>
-             </div>
-          </div>
-           <div class="extra-content-wrapper">
-            <div class="num-container"><div>02</div></div>
-             <div class="extra-text-container">
-               <div><h3>Lorem ipsum dolor.</h3></div>
-               <div><p>Ut ultricies lacus non fermentum ultrices.</p></div>
-             </div>
-          </div>
-        </div>
-       </div>
+        </span>
+      </div>
+      </div>
+
+      <div class="img-container">
+        <img src="./Assets/hero-light.png" />
       </div>
     </section>
-    <section class="sec-3">
-      <div class="content-wrapper">
-        <div class="content-wrapper-img-container">
-          <img src="./Assets/about-2-light.png"/>
-        </div>
-        <div class="content-wrapper-text-container">
-          <div class="colored-text">Create Audience Reports</div>
-          <div class="sec-2-heading"><h3>Know More About Your<br/> Audience</h3></div>
-          <div class="sec-2-extra-info">Schedule your posts for times when your audience is most active.<br/> Choose from our best-time predictions, or create your own<br/> publishing schedule.</div>
-           <div class="content-wrapper-button-container">
-             <a href="#">
-              <div class="sec-3-button-container">Know More</div>
-             </a>
-           </div>
-         </div>
-       </div>
+    <section class="sec-1" id="features">
+      <div>
+        <h2>Amazing features for you to make</h2>
+      </div>
+      <div>
+        <h2> your work easier</h2>
+      </div>
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae</p>
+      </div>
+      <div>
+        <p> tortor lacus. Phasellus aliquam ante in maximus.</p>
       </div>
     </section>
+
+
+    <section class="mini-sec">
+      <div class="row-container">
+        <div class="row-flex-item">
+          <div class="icon-container"><i class="fa-brands fa-app-store"></i></div>
+          <div class="header-container">
+            <h3>Crafted for App Landing</h3>
+          </div>
+          <div class="mini-sec-p-container"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+            tortor.</div>
+        </div>
+        <div class="row-flex-item">
+          <div class="icon-container"><i class="fa-solid fa-layer-group"></i></div>
+          <div class="header-container">
+            <h3>High Quality Design</h3>
+          </div>
+          <div class="mini-sec-p-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+            tortor.</div>
+        </div>
+        <div class="row-flex-item">
+          <div class="icon-container"><i class="fa-solid fa-chess-board"></i></div>
+          <div class="header-container">
+            <h3>All Essential Sections</h3>
+          </div>
+          <div class="mini-sec-p-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+            tortor.</div>
+        </div>
+      </div>
+      <div class="row-container">
+        <div class="row-flex-item">
+          <div class="icon-container"><i class="fa-solid fa-gauge-high"></i></div>
+          <div class="header-container">
+            <h3>Speed Optimized</h3>
+          </div>
+          <div class="mini-sec-p-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+            tortor.</div>
+        </div>
+        <div class="row-flex-item">
+          <div class="icon-container"><i class="fa-solid fa-sliders"></i></div>
+          <div class="header-container">
+            <h3>Fully Customizable</h3>
+          </div>
+          <div class="mini-sec-p-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+            tortor.</div>
+        </div>
+        <div class="row-flex-item">
+          <div class="icon-container"><i class="fa-solid fa-arrows-rotate"></i></div>
+          <div class="header-container">
+            <h3>Regular Updates</h3>
+          </div>
+          <div class="mini-sec-p-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+            tortor.</div>
+        </div>
+      </div>
+    </section>
+    </section>
+  </main>
+  <section class="sec-2" id="about">
+    <div class="content-wrapper">
+      <div class="content-wrapper-img-container">
+        <img src="./Assets/about-1-light.png" />
+      </div>
+      <div class="content-wrapper-text-container">
+        <div class="colored-text">Track Audience Activities</div>
+        <div class="sec-2-heading">
+          <h3>Track Your Audience<br /> Activities</h3>
+        </div>
+        <div class="sec-2-extra-info">Schedule your posts for times when your audience is most active.<br /> Choose from
+          our best-time predictions, or create your own<br /> publishing schedule.</div>
+        <div class="extra-content-wrapper">
+          <div class="num-container">
+            <div>01</div>
+          </div>
+          <div class="extra-text-container">
+            <div>
+              <h3>Lorem ipsum dolor.</h3>
+            </div>
+            <div>
+              <p>Ut ultricies lacus non fermentum ultrices.</p>
+            </div>
+          </div>
+        </div>
+        <div class="extra-content-wrapper">
+          <div class="num-container">
+            <div>02</div>
+          </div>
+          <div class="extra-text-container">
+            <div>
+              <h3>Lorem ipsum dolor.</h3>
+            </div>
+            <div>
+              <p>Ut ultricies lacus non fermentum ultrices.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="sec-3">
+    <div class="content-wrapper">
+      <div class="content-wrapper-img-container">
+        <img src="./Assets/about-2-light.png" />
+      </div>
+      <div class="content-wrapper-text-container">
+        <div class="colored-text">Create Audience Reports</div>
+        <div class="sec-2-heading">
+          <h3>Know More About Your<br /> Audience</h3>
+        </div>
+        <div class="sec-2-extra-info">Schedule your posts for times when your audience is most active.<br /> Choose from
+          our best-time predictions, or create your own<br /> publishing schedule.</div>
+        <div class="content-wrapper-button-container">
+          <a href="#">
+            <div class="sec-3-button-container">Know More</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="sec-4" id="How-It-Works">
     <div class="sec-1">
-         <div><h2>How It Works?</h2></div>
-          
-          <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae</p></div><div><p> tortor lacus. Phasellus aliquam ante in maximus.</p></div>
+      <div>
+        <h2>How It Works?</h2>
+      </div>
+
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae</p>
+      </div>
+      <div>
+        <p> tortor lacus. Phasellus aliquam ante in maximus.</p>
+      </div>
+    </div>
+    <section class="mini-sec">
+      <div class="row-container">
+        <div class="row-flex-item">
+          <div class="icon-container"><i class="fa-solid fa-download"></i></div>
+          <div class="header-container">
+            <h3>Install the App</h3>
+          </div>
+          <div class="mini-sec-p-container"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+            tortor.</div>
         </div>
-        <section class="mini-sec">
-         <div class="row-container"> 
-           <div class="row-flex-item">
-             <div class="icon-container"><i class="fa-solid fa-download"></i></div>
-             <div class="header-container"><h3>Install the App</h3></div>
-             <div class="mini-sec-p-container"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</div>          
-           </div>
-           <div class="row-flex-item">
-             <div class="icon-container"><i class="fa-solid fa-user-group"></i></div>
-             <div class="header-container"><h3>Setup your profile</h3></div>
-             <div class="mini-sec-p-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</div>          
-           </div>
-           <div class="row-flex-item">
-             <div class="icon-container"><i class="fa-regular fa-handshake"></i></div>
-             <div class="header-container"><h3>Enjoy the features!</h3></div>
-             <div class="mini-sec-p-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.</div>          
-           </div>
-         </div>
-  </body>
+        <div class="row-flex-item">
+          <div class="icon-container"><i class="fa-solid fa-user-group"></i></div>
+          <div class="header-container">
+            <h3>Setup your profile</h3>
+          </div>
+          <div class="mini-sec-p-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+            tortor.</div>
+        </div>
+        <div class="row-flex-item">
+          <div class="icon-container"><i class="fa-regular fa-handshake"></i></div>
+          <div class="header-container">
+            <h3>Enjoy the features!</h3>
+          </div>
+          <div class="mini-sec-p-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis
+            tortor.</div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="sec-5">
+    <div class="sec-1">
+      <div>
+        <h2>Choose Your Plan</h2>
+      </div>
+
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae</p>
+      </div>
+      <div>
+        <p> tortor lacus. Phasellus aliquam ante in maximus.</p>
+      </div>
+    </div>
+    <div class="toggle-container">
+      <span>Monthly</span>
+      <span class="toggle-container-main">
+        <label class="toggle">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </span>
+      <span>Yearly</span>
+    </div>
+    <div class="row-container">
+      <div class="sec-5-row-flex-item">
+        <h3>Free</h3>
+        <p>Lorem Ipsum is simply dummythe.</p>
+        <span class="cart-details">
+          <h4>$</h4>
+          <h3>0</h3>
+          <p>/month</p>
+        </span>
+        <hr />
+        <div class="sec-5-row-flex-item-mini-item-container">
+          <span class="sec-5-row-flex-item-mini-item-container-more-details">
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-icon-container">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-text-container">60-day chat history</span>
+          </span>
+          <span class="sec-5-row-flex-item-mini-item-container-more-details">
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-icon-container">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-text-container">15 GB cloud storage</span>
+          </span>
+          <span class="sec-5-row-flex-item-mini-item-container-more-details">
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-icon-container">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-text-container">24/7 Support</span>
+          </span>
+          <span class="sec-5-row-flex-item-mini-item-container-more-details">
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-icon-container">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-text-container">Custom Branding
+              Strategy</span>
+          </span>
+
+          <a class="sec-5-button" id="black-button" href="#">
+            <div class="sec-3-button-container">Choose Plan</div>
+          </a>
+        </div>
+      </div>
+      <div class="sec-5-row-flex-item">
+        <h3>Unlimited</h3>
+        <p>Lorem Ipsum is simply dummythe.</p>
+        <span class="cart-details">
+          <h4>$</h4>
+          <h3>35</h3>
+          <p>/month</p>
+        </span>
+        <hr />
+        <div class="sec-5-row-flex-item-mini-item-container mid">
+          <span class="floating-text">Most Popular</span>
+          <span class="sec-5-row-flex-item-mini-item-container-more-details">
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-icon-container">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-text-container">60-day chat history</span>
+          </span>
+          <span class="sec-5-row-flex-item-mini-item-container-more-details">
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-icon-container">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-text-container">35 GB cloud storage</span>
+          </span>
+          <span class="sec-5-row-flex-item-mini-item-container-more-details">
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-icon-container">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-text-container">24/7 Support</span>
+          </span>
+          <span class="sec-5-row-flex-item-mini-item-container-more-details">
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-icon-container">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-text-container">Custom Branding
+              Strategy</span>
+          </span>
+          <a class="sec-5-button" href="#">
+            <div class="sec-3-button-container">Choose Plan</div>
+          </a>
+        </div>
+      </div>
+      <div class="sec-5-row-flex-item">
+        <h3>Business</h3>
+        <p>Lorem Ipsum is simply dummythe.</p>
+        <span class="cart-details">
+          <h4>$</h4>
+          <h3>59</h3>
+          <p>/month</p>
+        </span>
+        <hr />
+        <div class="sec-5-row-flex-item-mini-item-container">
+          <span class="sec-5-row-flex-item-mini-item-container-more-details">
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-icon-container">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-text-container">120-day chat
+              history</span>
+          </span>
+          <span class="sec-5-row-flex-item-mini-item-container-more-details">
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-icon-container">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-text-container">1 TB cloud storage</span>
+          </span>
+          <span class="sec-5-row-flex-item-mini-item-container-more-details">
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-icon-container">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-text-container">24/7 Support</span>
+          </span>
+          <span class="sec-5-row-flex-item-mini-item-container-more-details">
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-icon-container">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="sec-5-row-flex-item-mini-item-container-more-details-text-container">Custom Branding
+              Strategy</span>
+          </span>
+          <a class="sec-5-button" id="black-button" href="#">
+            <div class="sec-3-button-container">Choose Plan</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="minor-sec">
+    <div class="sec-1">
+      <div>
+        <h2>App Screenshots</h2>
+      </div>
+
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae</p>
+      </div>
+      <div>
+        <p> tortor lacus. Phasellus aliquam ante in maximus.</p>
+      </div>
+    </div>
+    <div class="minor-sec-img-container">
+      <img src="./Assets/screen-1-light.png" alt="App-screenshot-1" />
+      <img src="./Assets/screen-2-light.png" alt="App-screenshot-2" />
+      <img src="./Assets/screen-3-light.png" alt="App-screenshot-3" />
+    </div>
+    <div class="minor-sec-icon-container">
+      <div class="minor-sec-chevron left"><i class="fa-solid fa-arrow-left"></i></div>
+      <div class="minor-sec-chevron right"><i class="fa-solid fa-arrow-right"></i></div>
+    </div>
+  </section>
+</body>
+
 </html>

@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -10,6 +14,19 @@ body {
 button {
   all: unset;
   all: inherit;
+}
+
+a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+a:hover {
+  transform: scale(1.15);
+}
+
+.secondary-button-container:hover {
+  transform: scale(1.05);
 }
 
 header {
@@ -62,8 +79,9 @@ a.nav-item:hover {
 
 .hero-section {
   display: flex;
-  margin: 10rem 5rem;
+  margin: 0.1rem 5rem;
   justify-content: space-between;
+  align-items: center;
   animation: floatIn 1s ease-out forwards;
   animation-delay: 0.5s;
   height: 100vh;
@@ -91,15 +109,20 @@ a.nav-item:hover {
 
 /* -------- Its A Work In Progress -------- */
 
-/* 
 .heading span {
-  color: linear-gradient(
-    55.15deg,
-    #8ea5fe -7.09%,
-    #beb3fd 51.72%,
-    #90d1ff 101.48%
+  background: linear-gradient(
+    90.15deg,
+    #68b8f1 1.02%,
+    #7863f0 32.72%,
+    #324ca3 65.65%,
+    #5929a7 78.23%,
+    #3c0894 85.26%,
+    #5914da 101.48%
   );
-} */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .extra-info {
   font-size: 156x;
@@ -151,13 +174,12 @@ a.nav-item:hover {
 }
 
 .img-container {
-  background-image: linear-gradient(
-    55.15deg,
-    #8ea5fe -7.09%,
-    #beb3fd 51.72%,
-    #90d1ff 101.48%
-  );
-  background-size: 20rem 15rem;
+  position: relative;
+}
+
+section {
+  scroll-margin-top: 6.3rem;
+  margin: 4rem auto;
 }
 
 .sec-1 {
@@ -194,6 +216,16 @@ a.nav-item:hover {
   gap: 20px;
 }
 
+.row-flex-item h3,
+.row-flex-item .mini-sec-p-container {
+  transition: color 0.3s ease;
+}
+
+.row-flex-item:hover h3,
+.row-flex-item:hover .mini-sec-p-container {
+  color: rgb(69, 84, 170);
+}
+
 .icon-container {
   font-size: 32px;
   background-color: rgb(248 249 255);
@@ -208,11 +240,11 @@ a.nav-item:hover {
   margin-left: auto;
   margin-right: auto;
   background-color: rgb(219, 222, 238);
-  transition: background-color 300ms ease, color 300ms ease,
-    box-shadow 300ms ease, transform 500ms ease;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
-.icon-container:hover {
+.row-flex-item:hover .icon-container {
   background-color: rgb(69, 84, 170);
   color: white;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -223,7 +255,7 @@ a.nav-item:hover {
   color: #293e92;
 }
 
-.icon-container:hover i {
+.row-flex-item:hover .icon-container i {
   color: white;
   transform: scale(1.15);
 }
@@ -317,6 +349,181 @@ a.nav-item:hover {
   width: 7rem;
   margin: 3rem 0;
   border-radius: 5px;
+}
+
+.toggle-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem auto;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #116ce2;
+  transition: 0.3s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+.sec-5-row-flex-item * :not(hr) {
+  margin: 0.5rem;
+}
+
+.row-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 3rem;
+}
+
+.sec-5-row-flex-item {
+  border: 1px solid #b5b3be;
+  border-radius: 20px;
+  padding: 30px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  z-index: 12;
+}
+
+.sec-5-row-flex-item h3 {
+  justify-self: start;
+}
+
+.sec-5-row-flex-item p {
+  color: #626070;
+}
+
+.sec-5-row-flex-item span {
+  display: flex;
+}
+
+.cart-details {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.cart-details h4 {
+  font-size: 18px;
+}
+
+.sec-5-row-flex-item {
+  height: 100%;
+}
+
+.sec-5-row-flex-item h3 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.sec-5-row-flex-item i {
+  color: green;
+}
+
+.sec-5-row-flex-item-mini-item-container-more-details span {
+  font-size: 16px;
+  font-weight: 400;
+  align-items: center;
+}
+
+.row-container a {
+  text-decoration: none;
+}
+
+#black-button div {
+  background-color: #25242b;
+  border-radius: 5px;
+  margin: 0;
+  height: inherit;
+}
+
+.row-container a:hover,
+.row-container a div:hover {
+  background-color: rgb(112 131 245);
+}
+
+.mid {
+  position: relative;
+}
+
+.floating-text {
+  color: rgb(112 131 245);
+  text-decoration: underline;
+}
+
+.minor-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.minor-sec-img-container {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+/* 
+.minor-sec-img-container img {
+  animation: floatIn 0.3s ease-in-out;
+} */
+
+.minor-sec-icon-container {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.minor-sec-icon-container div {
+  display: flex;
+  border-radius: 50%;
+  border: 1px solid #44434d;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  color: #383547;
+}
+
+.minor-sec-icon-container div:hover {
+  background-color: #116ce2;
+  color: white;
 }
 
 /* --------- COMPONENTS ------------ */
