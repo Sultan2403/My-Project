@@ -19,6 +19,7 @@ button {
 a {
   display: inline-block;
   transition: transform 0.3s ease;
+  text-decoration: none;
 }
 
 a:hover {
@@ -67,7 +68,7 @@ a.nav-item:hover {
 }
 
 .sign-up {
-  background-color: rgb(112 131 245);
+  background-color: rgb(17, 108, 226);
   color: rgb(255, 254, 254);
   padding: 10px 30px;
   border-radius: 5px;
@@ -223,7 +224,7 @@ section {
 
 .row-flex-item:hover h3,
 .row-flex-item:hover .mini-sec-p-container {
-  color: rgb(69, 84, 170);
+  color: rgb(17, 108, 226);
 }
 
 .icon-container {
@@ -245,7 +246,7 @@ section {
 }
 
 .row-flex-item:hover .icon-container {
-  background-color: rgb(69, 84, 170);
+  background-color: rgb(17, 108, 226);
   color: white;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
@@ -343,7 +344,7 @@ section {
 
 .sec-3-button-container {
   text-align: center;
-  background-color: rgb(112 131 245);
+  background-color: rgb(17, 108, 226);
   color: rgb(255, 255, 255);
   padding: 12px 24px;
   width: 7rem;
@@ -483,7 +484,7 @@ section {
 }
 
 .floating-text {
-  color: rgb(112 131 245);
+  color: rgb(44, 65, 185);
   text-decoration: underline;
 }
 
@@ -491,6 +492,10 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.minor-sec-2-text-container h1 {
+  font-weight: 400;
 }
 
 .minor-sec-img-container {
@@ -524,6 +529,64 @@ section {
 .minor-sec-icon-container div:hover {
   background-color: #116ce2;
   color: white;
+}
+
+.minor-sec-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5rem auto;
+}
+
+.minor-sec-2-text-container h1,
+.minor-sec-2-text-container p :not(.minor-sec-2-button-container) {
+  margin: 1rem auto;
+}
+
+.minor-sec-2-button-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.minor-sec-2-button-container a {
+  display: flex;
+  align-items: center;
+}
+
+.minor-sec-2-button-container h4 {
+  font-weight: 400;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.container i {
+  font-size: 32px;
+}
+
+.minor-sec-2-button-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.download-google-play {
+  background-color: #116ce2;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+
+.download-apple {
+  background-color: #25242b;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 5px;
 }
 
 /* --------- COMPONENTS ------------ */
