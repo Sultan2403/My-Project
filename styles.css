@@ -589,6 +589,31 @@ section {
   border-radius: 5px;
 }
 
+.clients-flex-container-item p {
+  color: #626070;
+}
+
+.clients-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.actual-stuff {
+  margin: 2rem auto;
+  padding: 30px 42px;
+  background-color: #bdb1f3;
+  border-radius: 22px;
+  box-shadow: 2px 2px #444249;
+}
+
+.mini-clients-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem auto;
+}
+
 /* --------- COMPONENTS ------------ */
 
 @keyframes floatIn {
