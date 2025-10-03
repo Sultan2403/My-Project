@@ -604,7 +604,7 @@ section {
   padding: 30px 42px;
   background-color: #fafafa;
   border-radius: 22px;
-  box-shadow: 1px 1.5px #706d79, -0.5px -0.01px #706d79;
+  box-shadow: 1px 1.5px #706d79, -0.2px -0.001px #706d79;
 }
 
 .actual-stuff hr {
