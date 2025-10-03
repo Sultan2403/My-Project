@@ -602,9 +602,21 @@ section {
 .actual-stuff {
   margin: 2rem auto;
   padding: 30px 42px;
-  background-color: #bdb1f3;
+  background-color: #fafafa;
   border-radius: 22px;
-  box-shadow: 2px 2px #444249;
+  box-shadow: 1px 1.5px #706d79, -0.5px -0.01px #706d79;
+}
+
+.actual-stuff hr {
+  margin: 2rem auto;
+}
+
+.actual-stuff h4 {
+  font-weight: 400;
+}
+
+.mini-clients-flex-container p {
+  font-size: 12px;
 }
 
 .mini-clients-flex-container {
