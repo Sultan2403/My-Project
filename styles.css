@@ -22,8 +22,12 @@ a {
   text-decoration: none;
 }
 
-a:hover {
+.button:hover {
   transform: scale(1.15);
+}
+
+.secondary-button-container {
+  transition: transform 0.3s ease;
 }
 
 .secondary-button-container:hover {
@@ -190,6 +194,14 @@ section {
   justify-content: center;
   animation: floatIn 1s ease-out forwards;
   animation-delay: 0.4s;
+}
+
+.sec-1 h2 {
+  margin: 0.5rem auto;
+}
+
+.sec-1 p {
+  margin: 0.2rem auto;
 }
 
 .sec-1 div h2 {
@@ -474,9 +486,12 @@ section {
   height: inherit;
 }
 
-.row-container a:hover,
+#black-button div:hover {
+  transform: scale(1.15);
+}
+
 .row-container a div:hover {
-  background-color: rgb(112 131 245);
+  background-color: #116ce2;
 }
 
 .mid {
@@ -615,6 +630,11 @@ section {
   font-weight: 400;
 }
 
+.mini-clients-flex-container h4:hover {
+  color: #116ce2;
+  text-decoration: underline;
+}
+
 .mini-clients-flex-container p {
   font-size: 12px;
 }
@@ -624,6 +644,191 @@ section {
   align-items: center;
   justify-content: space-between;
   margin: 0.5rem auto;
+}
+
+.blog-sec-stuff {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 2rem 0;
+  gap: 2rem;
+  padding: 50px;
+  width: 70%;
+}
+
+.blog-sec-actual-stuff {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(247, 246, 250);
+  border-radius: 22px;
+  padding: 2rem 1rem;
+}
+
+.blog-text-container {
+  margin: 2rem 0;
+}
+
+.blog-text-container h2 {
+  font-weight: 400;
+  margin: 1.2rem 0;
+}
+
+.blog-text-container h2:hover,
+.blog-text-container p:hover {
+  color: #116ce2;
+  text-decoration: underline;
+}
+
+.blog-sec-stuff a {
+  color: #25242b;
+}
+
+.blog-icon-container,
+.blog-icon-container p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ------------------ This section is for positioning the p over the img
+---------------------- To be done tmr morning ----------- ----------------- */
+
+/* 
+.blog-icon-container {
+  position: relative;
+}
+
+.blog-icon-container div {
+  position: absolute;
+} */
+
+article {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #e5e1f0;
+}
+
+article img {
+  opacity: 0.65;
+}
+
+article img:hover {
+  opacity: 100;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem auto;
+  background-color: #f5f7fa;
+  width: 60%;
+  padding: 50px;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #706d79;
+  height: auto;
+}
+
+.form-inp-container {
+  display: flex;
+  width: 99%;
+}
+
+.form-inp-container div {
+  margin: auto 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 99%;
+}
+
+.form-btn {
+  background-color: rgb(17, 108, 226);
+  color: rgb(255, 254, 254);
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font: inherit;
+  width: 15%;
+  margin: 0.5rem;
+}
+
+form p {
+  color: #626070;
+  margin-bottom: -25px;
+}
+
+.form-inp-container div {
+  position: relative;
+}
+
+label {
+  position: absolute;
+  left: 5px;
+  top: 35%;
+  color: #706d79;
+  pointer-events: none;
+  font-size: 16px;
+  transition: all 0.5s ease;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:focus + label,
+textarea:not(:placeholder-shown) {
+  top: -10px;
+  left: 15px;
+  color: #116ce2;
+  transition: all 0.5s ease;
+  font-size: 14px;
+  background-color: #f5f7fa;
+  z-index: 5;
+  padding: 0 5px;
+}
+
+input:focus,
+input:not(:placeholder-shown),
+textarea:focus,
+textarea:not(:placeholder-shown) {
+  outline: none;
+  border: 2px solid #116ce2;
+}
+
+input:not(:focus):not(:placeholder-shown),
+textarea:not(:focus):not(:placeholder-shown) {
+  border: 1px solid #706d79;
+}
+
+input:not(:focus):not(:placeholder-shown) + label,
+textarea:not(:focus):not(:placeholder-shown) + label {
+  color: #706d79;
+}
+
+input,
+textarea {
+  width: 100%;
+  height: 4rem;
+  border: 1px solid #706d79;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  padding-left: 15px;
+  background-color: transparent;
+  color: #2b2b2f;
+}
+
+textarea {
+  height: 8rem;
+  resize: none;
 }
 
 /* --------- COMPONENTS ------------ */
@@ -637,4 +842,41 @@ section {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+#black-button {
+  background-color: #25242b;
+  color: rgb(255, 254, 254);
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font: inherit;
+}
+
+.button,
+.nav-item,
+#black-button {
+  transition: transform 0.3s ease-out;
+}
+
+.button:hover,
+.nav-item:hover,
+#black-button:hover {
+  transform: scale(1.12);
+}
+
+.nav-item:hover {
+  color: #116ce2;
+}
+
+.button:hover {
+  background-color: #298df5;
 }
