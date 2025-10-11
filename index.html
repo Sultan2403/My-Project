@@ -22,7 +22,7 @@
   <header>
     <nav>
       <span class="flex-container">
-        <a class="link" href="index.html"><img src="./Assets/logo.svg" /></a>
+        <a class="link nav-item" href="index.html"><img src="./Assets/logo.svg" /></a>
       </span>
       <span class="flex-container">
         <ul>
@@ -457,7 +457,7 @@
             </div>
           </div>
         </a>
-        <a class="download-apple button" href="#">
+        <a class="download-apple" href="#">
           <div class="container">
             <div class="minor-sec-2-button-icon-container"><i class="fa-brands fa-apple"></i> </div>
             <div class="minor-sec-2-button-text-container">
@@ -666,7 +666,7 @@
     <form>
       <div class="form-inp-container">
         <div>
-          <input id="name" type="text" placeholder=" " />
+          <input id="name" type="text" placeholder=" " required />
           <label for="name">Enter your name</label>
         </div>
         <div>
@@ -676,28 +676,116 @@
       </div>
       <div class="form-inp-container">
         <div>
-          <input id="user-email" type="email" placeholder=" " />
+          <input id="user-email" type="email" placeholder=" " required />
           <label for="user-email">Enter your email</label>
         </div>
         <div>
-          <input id="phone-num" type="number" placeholder=" " />
+          <input id="phone-num" type="number" placeholder=" " required />
           <label for="phone-num">Enter your phone number</label>
         </div>
       </div>
       <div class="form-inp-container">
         <div>
-          <textarea id="text-area" placeholder=" "></textarea>
+          <textarea id="text-area" placeholder=" " required></textarea>
           <label for="text-area">Tell us about yourself</label>
         </div>
       </div>
 
       <p>By clicking contact us button, you agree our terms and policy.</p>
-      <button class="button form-btn">Contact Us</button>
+      <button type="submit" class="button form-btn">Contact Us</button>
     </form>
   </section>
   <footer>
+    <div class="footer-main">
+      <div class="footer-left">
+        <a class="nav-item" href="#"><img src="./Assets/logo.svg" alt="Our Logo" /></a>
+        <p>This membership will help you plan and<br /> execute a variety of projects.</p>
+      </div>
+      <div class="footer-right">
+        <div class="footer-right-items">
+          <h2>Home</h2>
 
+          <a class="footer-link" href="#">
+            <p>Product</p>
+          </a>
+          <a class="footer-link" href="#">
+            <p>Pricng</p>
+          </a>
+          <a class="footer-link" href="#">
+            <p>Business</p>
+          </a>
+          <a class="footer-link" href="#">
+            <p>Enterprise</p>
+          </a>
+        </div>
+
+
+        <div class="footer-right-items">
+          <h2>About Us</h2>
+
+          <a class="footer-link" href="#">
+            <p>Company</p>
+          </a>
+          <a class="footer-link" href="#">
+            <p>Leadership</p>
+          </a>
+          <a class="footer-link" href="#">
+            <p>Careers</p>
+          </a>
+          <a class="footer-link" href="#">
+            <p>Diversity</p>
+          </a>
+        </div>
+        <div class="footer-right-items">
+          <h2>Resources</h2>
+
+          <a class="footer-link" href="#">
+            <p>Handy Guide</p>
+          </a>
+          <a class="footer-link" href="#">
+            <p>Forum</p>
+          </a>
+          <a class="footer-link" href="#">
+            <p>Support</p>
+          </a>
+          <a class="footer-link" href="#">
+            <p>App Directory</p>
+          </a>
+        </div>
+        <div class="footer-right-items">
+          <h2>Tutorial</h2>
+
+          <a class="footer-link" href="#">
+            <p>10 Leadership Styles</p>
+          </a>
+          <a class="footer-link" href="#">
+            <p>Executive Summary Tips</p>
+          </a>
+          <a class="footer-link" href="#">
+            <p>Prevent Team Burnout</p>
+          </a>
+          <a class="footer-link" href="#">
+            <p>What are OKRs?</p>
+          </a>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-secondary">
+      <div>© 2025 Appline. All rights reserved</div>
+      <div>
+        <a href="#" class="footer-btm-link"> <i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="footer-btm-link"> <i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="footer-btm-link"> <i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" class="footer-btm-link"> <i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="footer-btm-right">
+        <a href="#" class="footer-btm-link"> <span>Privacy Policy</span></a>
+        <a href="#" class="footer-btm-link"> <span>Terms and conditions</span></a>
+      </div>
+    </div>
   </footer>
+
 </body>
 
 </html>
